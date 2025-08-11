@@ -1,3 +1,5 @@
+![Gemini cli image](https://github.com/claytronOnLinux/gemini-cli/blob/main/assets/gemini.png)
+
 # Gemini CLI Docker Environment
 
 This project provides a simple, clean Dockerized environment for running the Google Gemini CLI (`@google/gemini-cli`).
