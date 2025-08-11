@@ -2,19 +2,6 @@
 
 This project provides a simple, clean Dockerized environment for running the Google Gemini CLI (`@google/gemini-cli`).
 
-## Usage
-
-1.  **Start and Connect**: 
-    ```bash
-    docker compose up -d
-    ```
-    ```bash
-    docker exec -it gemini-cli /bin/bash
-    ```
-    ```bash
-    cd /work
-    ```
-
 ## Configuration
 
 ### API Key
@@ -44,3 +31,18 @@ To fix this, you can tell the container to run as your own user and group. Open 
 ```
 
 You can find your user and group ID by running the `id` command in your terminal.
+
+## Usage
+
+1.  **Start and Connect**: 
+    ```bash
+    docker compose up -d
+    ```
+    ```bash
+    docker exec -it gemini-cli /bin/bash
+    ```
+    ```bash
+    cd /work
+    ```
+
+
