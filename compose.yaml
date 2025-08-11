@@ -1,0 +1,15 @@
+services:
+  gemini-cli:
+    build: .
+    image: claytrononlinux/gemini-cli
+    container_name: gemini-cli
+    hostname: gemini-cli
+    # Via a .env set a volume mount for a local directory into the container's /work directory. 
+    # When you enter the contianer, navigate to that directory to work out of.
+    volumes:
+      - ${WORK_DIR}:/work
+    user: "1000:1000"
+    env_file:
+      - ./.env
+    # tty Keeps the container running in the background
+    tty: true
