@@ -4,9 +4,15 @@ This project provides a simple, clean Dockerized environment for running the Goo
 
 ## Usage
 
-1.  **Start and Connect**: Use the start script to launch the container and get a shell inside it.
+1.  **Start and Connect**: 
     ```bash
-    ./start.sh
+    docker compose up -d
+    ```
+    ```bash
+    docker exec -it gemini-cli /bin/bash
+    ```
+    ```bash
+    cd /work
     ```
 
 ## Configuration
@@ -14,13 +20,9 @@ This project provides a simple, clean Dockerized environment for running the Goo
 ### API Key
 
 Create a `.env` file in this directory and add your Gemini API key:
-
-```
-GEMINI_API_KEY=your_api_key_here
-```
-
 Also add a volume to use as your /work directory:
-```
+```bash
+GEMINI_API_KEY=your_api_key_here
 WORK_DIR=/home/my_username/work
 ```
 
